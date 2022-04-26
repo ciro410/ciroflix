@@ -1,0 +1,26 @@
+.row{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align{
+    align-items: center;
+}
+
+.justify{
+    display: flex;
+    justify-content: center;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ml-350{
+    margin-left: 350px;
+}
