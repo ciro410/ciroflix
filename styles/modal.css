@@ -31,13 +31,12 @@
 
 }
 
-.block-3 {
+.modal__image {
   width: 729px;
   height: 350px;
-  background-color: gray;
 }
 
-.modal-movie-title {
+.modal__title {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -49,7 +48,7 @@
 
 }
 
-.modal-movie-sinopse {
+.modal__description {
   width: 730px;
   font-family: 'Manrope';
   font-style: normal;
@@ -64,7 +63,7 @@
 
 }
 
-.category-modal {
+.modal__genre {
   background: #E183C8;
   border-radius: 8px;
   padding: 7px 9px;
@@ -83,7 +82,7 @@
 
 }
 
-.rating-modal {
+.modal__rating {
   background: #A785ED;
   border-radius: 8px;
   padding: 7px 9px;

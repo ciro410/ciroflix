@@ -40,4 +40,15 @@ img{
   cursor: pointer;
 }
 
+.dark{
+  width: 553px;
+  height: 311px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.mr-12{
+  margin-right: 12px;
+}
+
 

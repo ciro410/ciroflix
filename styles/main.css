@@ -6,10 +6,10 @@ main {
   gap: 24px;
   margin: 41px 0px;
   padding: 0 24px;
+  cursor: pointer;
 }
 
 .movie {
-  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -39,29 +39,83 @@ main {
 
 }
 
-.movie__title{
-  white-space:nowrap;
+.movie__title {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 70%;
 }
 
-.block-2 {
-  background-color: #979797;
-  width: 550px;
-  height: 311px;
 
-}
 
-.main-movie {
+.highlight__movie {
   gap: 24px;
 
 }
 
-.description {
+.highlight__video {
+  width: 553px;
+  height: 311px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.highlight__info {
+  box-sizing: border-box;
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   padding: 16px 16px 77px 16px;
+  width: 360px;
+  height: 311px;
+}
+
+.highlight__title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+
+  color: #E183C8;
+
+}
+
+.highlight__rating {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+  text-align: right;
+
+  color: #A785ED;
+
+}
+
+.highlight__genres,
+.highlight__launch {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  text-transform: uppercase;
+
+  color: rgba(0, 0, 0, 0.7);
+
 }
 
 h2 {
@@ -77,6 +131,18 @@ h2 {
   color: #000000;
 }
 
-.sinopse {
+.highlight__description {
   width: 328px;
+  height: 120px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #000000;
+
+  
 }

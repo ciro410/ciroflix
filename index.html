@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
@@ -27,89 +27,44 @@
     <main class=" column align">
         <div class="justify"><input type="text" class="search" placeholder="Pesquisar..."></div>
 
-        <aside class="row">
-            <img src="./assets/seta-esquerda-preta.svg" alt="">
-            <section class="movies row ">
-                <div class="movie">
-                    <div class="movie__info">
-                        <span class="movie__title">Esquadrão Suícida</span>
-                        <span class="movie__rating">
-                            8.8
-                            <img src="./assets/estrela.svg" alt="estrela">
-                        </span>
-                    </div>
-                </div>
-                <div class="movie block">
-                    <div class="movie__info">
-                        <span class="movie__title"></span>
-                        <span class="movie__rating">
-                            <img src="./assets/estrela.svg" alt="estrela">
-                        </span>
-                    </div>
-                </div>
-                <div class="movie block">
-                    <div class="movie__info">
-                        <span class="movie__title"></span>
-                        <span class="movie__rating">
-                            <img src="./assets/estrela.svg" alt="estrela">
-                        </span>
-                    </div>
-                </div>
-                <div class="movie block">
-                    <div class="movie__info">
-                        <span class="movie__title"></span>
-                        <span class="movie__rating">
-                            <img src="./assets/estrela.svg" alt="estrela">
-                        </span>
-                    </div>
-                </div>
-                <div class="movie block">
-                    <div class="movie__info">
-                        <span class="movie__title"></span>
-                        <span class="movie__rating">
-                            <img src="./assets/estrela.svg" alt="estrela">
-                        </span>
-                    </div>
-                </div>
-                
-            </section>
-            <img src="./assets/seta-direita-preta.svg" alt="">
-        </aside>
+        <div class="row">
+            <img src="./assets/seta-esquerda-preta.svg" class="left-button" alt="">
+            <section class="movies row "></section>
+            <img src="./assets/seta-direita-preta.svg" class="right-button" alt="">
+        </div>
 
-        <section class="highlights">
+        <section class="highlight">
             <h2>Highlight do dia</h2>
-            <div class="main-movie row">
-                <div class="block-2">
-
-                </div>
-                <div class="description">
+            <div class="highlight__movie row">
+                <a href="" class="highlight__video-link" href = "#" target="_blank">
+                    <div class="highlight__video">
+                        <img src="./assets/play.svg" alt="Play">
+                        <div class="dark"></div>
+                    </div>
+                    
+                </a>
+                <div class="highlight__info">
                     <aside class="row align space-between">
-                        <h3 class="title">Velozes e Furiosos</h3>
-                        <span class="rating">7.7</span>
+                        <h3 class="highlight__title"></h3>
+                        <span class="highlight__rating"></span>
                     </aside>
-                    <span class="category">ACÃO,CRIME,THRILLER/ 19 DE MAIO DE 2021</span>
-                    <p class="sinopse">
-                        Dominic Toretto e sua família precisam enfrentar o seu irmão mais novo Jakob, um assassino
-                        mortal que está trabalhando com uma antiga inimiga, a cyber-terrorista Cipher.
-                    </p>
+                    <span class="highlight__genres"></span>
+                    /
+                    <span class="highlight__launch"></span> 
+                    <p class="highlight__description"></p>
                 </div>
             </div>
         </section>
         <div class="modal hidden">
             <img src="./assets/close.svg" class="modal-close" alt="">
             <div class="modal-main-movie">
-                <h2 class="modal-movie-title">O Esquadrão Suícida</h2>
-                <div class="block-3"></div>
-                <p class="modal-movie-sinopse">Os supervilões Harley Quinn (Margot Robbie), Bloodsport (Idris Elba),
-                    Peacemaker (John Cena) e uma coleção de malucos condenados da prisão de Belle Reve juntam-se à
-                    super-secreta e super-obscura Força Tarefa X, enquanto são deixados na remota ilha de Corto Maltese
-                    para combater o inimigo.</p>
-                <aside>
-                    <span class="category-modal">Aventura</span>
-                    <span class="category-modal">Fantasia</span>
-                    <span class="category-modal">Comedia</span>
-                    <span class="rating-modal  ml-350">8.1</span>
-                </aside>
+                <h2 class="modal__title"></h2>
+                <img class="modal__image">
+                <p class="modal__description"></p>
+                <div class="row align space-between">
+                    <div class="modal__genres space-around"></div>
+                    <span class="modal__rating"></span>
+                </div>
             </div>
 
         </div>
