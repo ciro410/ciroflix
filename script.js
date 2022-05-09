@@ -10,6 +10,7 @@ const modalRating = document.querySelector('.modal__rating')
 const leftBtn = document.querySelector('.left-button');
 const rightBtn = document.querySelector('.right-button');
 const searchInput = document.querySelector('.search');
+const highlightMovie = document.querySelector('.highlight__movie')
 const highlightVideoLink = document.querySelector('.highlight__video-link')
 const highlightVideo = document.querySelector('.highlight__video')
 const highlightTitle = document.querySelector('.highlight__title')
@@ -17,11 +18,31 @@ const highlightRating = document.querySelector('.highlight__rating')
 const highlightGenres = document.querySelector('.highlight__genres')
 const highlightLaunch = document.querySelector('.highlight__launch')
 const highlightDescription = document.querySelector('.highlight__description')
+const btnTheme = document.querySelector('.btn-theme');
+const dark = document.querySelector('.dark');
+
+
+
 
 
 
 let currentPage = 0;
-let currentMovies = []
+let currentMovies = [];
+let moviesNumber = 5;
+let currentTheme  =  'light'
+
+if (window.screen.width < 400){
+    moviesNumber = 1;
+    highlightMovie.classList.remove('row');
+    highlightVideo.style.width = '350px'
+    dark.style.width = '350px';
+    searchInput.style.width  = '350px';
+    modalImg.style.width = '350px'
+    modalDescription.style.width = '350px';
+
+}else{
+    moviesNumber = 5
+}
 
 
 closeButton.addEventListener('click', () => {
@@ -33,7 +54,7 @@ closeButton.addEventListener('click', () => {
 
 leftBtn.addEventListener('click', () => {
     if (currentPage === 0) {
-        currentPage = 3;
+        currentPage = 10;
     } else {
         currentPage--;
     }
@@ -43,7 +64,7 @@ leftBtn.addEventListener('click', () => {
 });
 
 rightBtn.addEventListener('click', () => {
-    if (currentPage === 3) {
+    if (currentPage === 10) {
         currentPage = 0;
     } else {
         currentPage++;
@@ -74,10 +95,36 @@ searchInput.addEventListener('keydown', (event) => {
 
 })
 
+
+btnTheme.addEventListener('click', (event) =>{
+    if(currentTheme === 'light'){
+        currentTheme = 'dark'
+        btnTheme.src = "./assets/dark-mode.svg"
+        leftBtn.src = "./assets/seta-esquerda-branca.svg"
+        rightBtn.src = "./assets/seta-direita-branca.svg"
+        root.style.setProperty('--background-color', '#242424');
+        root.style.setProperty('--input-background-color', '#242424')
+        root.style.setProperty('--input-border-color', '#fff')
+        root.style.setProperty('--text-color', '#fff')
+        root.style.setProperty('--highlight-background-color', '#454545')
+    }else{
+        currentTheme = 'light'
+        btnTheme.src = "./assets/light-mode.svg";
+        leftBtn.src = "./assets/seta-esquerda-preta.svg"
+        rightBtn.src = "./assets/seta-direita-preta.svg"
+        root.style.setProperty('--background-color', '#FFFFFF');
+        root.style.setProperty('--input-background-color', '#fff');
+        root.style.setProperty('--input-border-color', '#979797');
+        root.style.setProperty('--text-color', '#000');
+        root.style.setProperty('--highlight-background-color', '#fff');
+    }
+})
+
+
 function displayMovies() {
     movies.textContent = '';
 
-    for (let i = (currentPage * 5); i < (currentPage + 1) * 5; i++) {
+    for (let i = (currentPage * moviesNumber); i < (currentPage + 1) * moviesNumber; i++) {
         const movieContainer = document.createElement('div')
         movieContainer.classList.add('movie')
         movieContainer.style.backgroundImage = `url('${currentMovies[i].poster_path}')`;
