@@ -1,0 +1,153 @@
+main {
+  padding-bottom: 120px;
+}
+
+.movies {
+  gap: 24px;
+  margin: 41px 0px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+.movie {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 170px;
+  height: 300px;
+  position: relative;
+}
+
+.movie__info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 8px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #FDFDFD;
+  flex-wrap: nowrap;
+
+}
+
+.movie__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+
+.highlight h2{
+  color:  var(--text-color);
+}
+
+
+
+.highlight__movie {
+  gap: 24px;
+
+}
+
+.highlight__video {
+  width: 553px;
+  height: 311px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.highlight__info {
+  box-sizing: border-box;
+  background-color: var(--highlight-background-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px 16px 77px 16px;
+  width: 360px;
+  height: 311px;
+  color: var(--text-color);
+}
+
+.highlight__title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+
+  color: #E183C8;
+
+}
+
+.highlight__rating {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+  text-align: right;
+
+  color: #A785ED;
+
+}
+
+.highlight__genres,
+.highlight__launch {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  text-transform: uppercase;
+
+  color: var(--text-color);
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+
+
+
+  color: #000000;
+}
+
+.highlight__description {
+  width: 328px;
+  height: 120px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: var(--text-color);
+
+  
+}
