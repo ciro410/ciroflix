@@ -31,7 +31,7 @@ let currentMovies = [];
 let moviesNumber = 5;
 let currentTheme  =  'light'
 
-if (window.screen.width < 400){
+if (window.screen.width < 500){
     moviesNumber = 1;
     highlightMovie.classList.remove('row');
     highlightVideo.style.width = '350px'
